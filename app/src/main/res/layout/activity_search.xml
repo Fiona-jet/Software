@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search"
+    android:background="@drawable/b">
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regular Usage"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Insomnia Button -->
+    <Button
+        android:id="@+id/button_insomnia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Insomnia"
+        app:layout_constraintTop_toBottomOf="@id/heading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Painkiller Button -->
+    <Button
+        android:id="@+id/button_painkiller"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Painkiller"
+        app:layout_constraintTop_toBottomOf="@id/button_insomnia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Fever Button -->
+    <Button
+        android:id="@+id/button_fever"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fever"
+        app:layout_constraintTop_toBottomOf="@id/button_painkiller"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Hypertension Button -->
+    <Button
+        android:id="@+id/button_hypertension"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hypertension"
+        app:layout_constraintTop_toBottomOf="@id/button_fever"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Asthma Button -->
+    <Button
+        android:id="@+id/button_asthma"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Asthma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_hypertension" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
