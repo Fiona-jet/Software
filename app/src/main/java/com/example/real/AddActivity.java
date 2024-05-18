@@ -19,7 +19,7 @@ public class AddActivity extends AppCompatActivity {
     private EditText editText;
     private Button buttonSave, buttonCancel;
     private Alarm alarm;
-    private boolean needRefresh;
+    public boolean needRefresh;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
