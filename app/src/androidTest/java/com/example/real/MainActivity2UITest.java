@@ -12,8 +12,15 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+/**
+ * The MainActivity2UITest class contains UI tests for MainActivity2 using Espresso.
+ * It verifies the visibility of specific UI components such as toolbar, drawer layout, and bottom navigation view.
+ */
 @RunWith(AndroidJUnit4.class)
 public class MainActivity2UITest {
+    /**
+     * Launches the MainActivity2 before each test method.
+     */
 
     @Before
     public void launchActivity() {
@@ -21,19 +28,26 @@ public class MainActivity2UITest {
         ActivityScenario.launch(MainActivity2.class);
     }
 
+    /**
+     * Test case for verifying if the toolbar is displayed.
+     */
     @Test
     public void testToolbarDisplayed() {
         // Check if the toolbar is displayed
         Espresso.onView(withId(R.id.toolbar)).check(matches(isDisplayed()));
     }
-
+    /**
+     * Test case for verifying if the drawer layout is displayed.
+     */
     @Test
     public void testDrawerLayoutDisplayed() {
         // Check if the drawer layout is displayed
         Espresso.onView(withId(R.id.drawerlayout)).check(matches(isDisplayed()));
     }
 
-
+    /**
+     * Test case for verifying if the bottom navigation view is displayed.
+     */
 
     @Test
     public void testBottomNavigationViewDisplayed() {
