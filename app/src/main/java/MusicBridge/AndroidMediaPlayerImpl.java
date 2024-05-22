@@ -7,14 +7,28 @@ import android.content.Context;
 import android.media.MediaPlayer;
 import android.provider.Settings;
 
+/**
+ * Implementation of MediaPlayerImpl for Android platform.
+ */
+
 public class AndroidMediaPlayerImpl implements MediaPlayerImpl {
     private MediaPlayer mediaPlayer;
     private Context context;
 
+    /**
+     * Constructs an AndroidMediaPlayerImpl object.
+     *
+     * @param context The Android context.
+     */
+
     public AndroidMediaPlayerImpl(Context context) {
         this.context = context;
     }
-
+    /**
+     * Starts playing the default alarm alert sound.
+     *
+     * @return Always returns null.
+     */
     @Override
     public junit.framework.TestResult start() {
 
@@ -22,6 +36,10 @@ public class AndroidMediaPlayerImpl implements MediaPlayerImpl {
         mediaPlayer.start();
         return null;
     }
+
+    /**
+     * Stops the MediaPlayer and releases its resources.
+     */
 
     @Override
     public void stop() {
