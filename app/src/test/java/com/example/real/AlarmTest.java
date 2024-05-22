@@ -6,8 +6,16 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
+/**
+ * The AlarmTest class contains unit tests for the Alarm class.
+ * It verifies the functionality of the Alarm class methods.
+ */
 public class AlarmTest {
 
+    /**
+     * Test case for verifying the constructor of the Alarm class.
+     * It checks if the constructor correctly initializes the alarm with given parameters.
+     */
     @Test
     public void testAlarmConstructor() {
         Alarm alarm = new Alarm(8, 30, true, "Morning Alarm");
@@ -17,6 +25,10 @@ public class AlarmTest {
         assertEquals("Morning Alarm", alarm.getName());
     }
 
+    /**
+     * Test case for verifying the setHour() method of the Alarm class.
+     * It checks if the setHour() method correctly sets the hour of the alarm.
+     */
     @Test
     public void testSetHour() {
         Alarm alarm = new Alarm();
@@ -24,6 +36,10 @@ public class AlarmTest {
         assertEquals(7, alarm.getHour());
     }
 
+    /**
+     * Test case for verifying the setMinute() method of the Alarm class.
+     * It checks if the setMinute() method correctly sets the minute of the alarm.
+     */
     @Test
     public void testSetMinute() {
         Alarm alarm = new Alarm();
@@ -31,13 +47,20 @@ public class AlarmTest {
         assertEquals(45, alarm.getMinute());
     }
 
+    /**
+     * Test case for verifying the setStatus() method of the Alarm class.
+     * It checks if the setStatus() method correctly sets the status of the alarm.
+     */
     @Test
     public void testSetStatus() {
         Alarm alarm = new Alarm();
         alarm.setStatus(false);
         assertFalse(alarm.getStatus());
     }
-
+    /**
+     * Test case for verifying the setName() method of the Alarm class.
+     * It checks if the setName() method correctly sets the name of the alarm.
+     */
     @Test
     public void testSetName() {
         Alarm alarm = new Alarm();
@@ -45,6 +68,10 @@ public class AlarmTest {
         assertEquals("Evening Alarm", alarm.getName());
     }
 
+    /**
+     * Test case for verifying the toString() method of the Alarm class.
+     * It checks if the toString() method correctly generates a string representation of the alarm time.
+     */
     @Test
     public void testToString() {
         // Test for AM format
