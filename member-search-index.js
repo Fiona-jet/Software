@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.example.real","c":"SplashScreenManagerTest","l":"SplashScreenManagerTest()","u":"%3Cinit%3E()"},{"p":"com.example.real","c":"SplashScreenManagerTest","l":"testDelayTimeDefaultValue()"},{"p":"com.example.real","c":"SplashScreenManagerTest","l":"testSetDelayTime()"}];updateSearchResults();
