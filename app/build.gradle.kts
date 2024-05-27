@@ -48,12 +48,8 @@ dependencies {
 
     testImplementation ("org.mockito:mockito-core:4.0.0")
     testImplementation ("androidx.test:core:1.4.0")
-//    testImplementation ("androidx.test.ext:junit:1.1.3")
-//    testImplementation ("androidx.test.ext:truth:1.4.0")
     testImplementation ("org.robolectric:shadows-framework:4.6.1")
-    //
-//    androidTestImplementation ("androidx.test.ext:junit:1.1.2")
-    androidTestImplementation ("androidx.test.espresso:espresso-core:3.3.0")
+
     androidTestImplementation ("androidx.test.espresso:espresso-contrib:3.3.0")
     androidTestImplementation ("androidx.test:rules:1.3.0")
 }
